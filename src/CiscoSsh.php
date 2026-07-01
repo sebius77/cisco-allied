@@ -139,10 +139,11 @@ class CiscoSsh
                 $fields = sscanf($rest, '%s %s %s %s %s %s');
 
                 $entry['status'] = $fields[0];
-                $entry['vlan'] = $fields[1];
-                $entry['duplex'] = $fields[2];
-                $entry['speed'] = $fields[3];
-                $entry['type'] = trim($fields[4] . ' ' . $fields[5]);
+                $entry['name'] = $fields[1];
+                $entry['vlan'] = $fields[2];
+                $entry['duplex'] = $fields[3];
+                $entry['speed'] = $fields[4];
+                $entry['type'] = trim($fields[5] . ' ' . $fields[6]);
 
                 $result[] = $entry;
             }
