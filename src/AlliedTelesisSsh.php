@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AlliedTelesisSsh;
+namespace App\Network;
 
 /**
  * Nécessite le paquet Composer : phpseclib/phpseclib (v3)
