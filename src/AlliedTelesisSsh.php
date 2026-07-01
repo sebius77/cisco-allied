@@ -169,11 +169,12 @@ class AlliedTelesisSsh
 
             $entry = [
                 'interface' => $fields[0],
-                'status' => $fields[1],
-                'vlan' => $fields[2],
-                'duplex' => $fields[3],
-                'speed' => $fields[4],
-                'type' => implode(' ', array_slice($fields, 5)),
+                'name' => $fields[1],
+                'status' => $fields[2],
+                'vlan' => $fields[3],
+                'duplex' => $fields[4],
+                'speed' => $fields[5],
+                'type' => implode(' ', array_slice($fields, 6)),
             ];
 
             $result[] = $entry;
